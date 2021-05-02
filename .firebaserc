@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "flight-booking-11de7": {
+      "hosting": {
+        "flight-booking": [
+          "flight-booking-11de7"
+        ]
+      }
+    }
+  }
+}
