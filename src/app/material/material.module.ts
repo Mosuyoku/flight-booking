@@ -23,7 +23,7 @@ const MATERIAL_MODULES = [
   MatCheckboxModule,
   MatSelectModule,
   MatToolbarModule
-]
+];
 
 @NgModule({
   declarations: [],
