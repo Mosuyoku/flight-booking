@@ -3,3 +3,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toast-success {
+  background: rgb(0, 189, 0)
+}
+
+.toast-error {
+  background: rgb(177, 0, 0);
+}

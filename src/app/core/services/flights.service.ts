@@ -16,6 +16,10 @@ export class FlightsService {
       .pipe(map(response => response.map(flight => this.assignKey(flight))));
   }
 
+  addFlight(flight: Flight): any {
+    return this.db.list(this.API_URL).push(flight);
+  }
+
   private assignKey(flight: any): any {
     return { ...flight.payload.val(), key: flight.key };
   }
