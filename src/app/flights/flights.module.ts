@@ -6,6 +6,8 @@ import { FlightCardComponent } from './flight-card/flight-card.component';
 import { NewFlightComponent } from './new-flight/new-flight.component';
 import { FlightFormComponent } from './flight-form/flight-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailsComponent } from './details/details.component';
+import { EditFlightComponent } from './edit-flight/edit-flight.component';
 
 
 
@@ -14,7 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FlightsComponent,
     FlightCardComponent,
     NewFlightComponent,
-    FlightFormComponent
+    FlightFormComponent,
+    DetailsComponent,
+    EditFlightComponent
   ],
   exports: [
     FlightsComponent
@@ -25,6 +29,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  entryComponents: [NewFlightComponent]
+  entryComponents: [
+    NewFlightComponent,
+    DetailsComponent
+  ]
 })
 export class FlightsModule { }

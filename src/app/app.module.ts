@@ -13,7 +13,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { EditFlightComponent } from './flights/edit-flight/edit-flight.component';
 import { FlightsComponent } from './flights/flights.component';
 import { DashboardComponent } from './core/dashboard/dashboard.component';
 import { LoginComponent } from './core/login/login.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       { path: '', redirectTo: 'flights', pathMatch: 'full' },
-      { path: 'flights', component: FlightsComponent }
+      { path: 'flights', component: FlightsComponent },
+      { path: 'flights/:key', component: EditFlightComponent }
     ]
   }
 ];

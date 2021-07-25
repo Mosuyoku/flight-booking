@@ -1,3 +1,4 @@
+import { DetailsComponent } from './details/details.component';
 import { Flight } from './../models/flight.model';
 import { FlightsService } from './../core/services/flights.service';
 import { Component } from '@angular/core';
@@ -20,5 +21,9 @@ export class FlightsComponent {
 
   openNewFlightModal(): void {
     this.dialog.open(NewFlightComponent);
+  }
+
+  showDetails(flight): void {
+    this.dialog.open(DetailsComponent, {data: flight});
   }
 }
