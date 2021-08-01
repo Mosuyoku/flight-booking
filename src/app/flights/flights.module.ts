@@ -1,3 +1,4 @@
+import { FlightsRoutingModule } from './flights-routing.module';
 import { MaterialModule } from './../material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -27,7 +28,9 @@ import { EditFlightComponent } from './edit-flight/edit-flight.component';
     CommonModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlightsRoutingModule,
+    MaterialModule
   ],
   entryComponents: [
     NewFlightComponent,
